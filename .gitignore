@@ -12,6 +12,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+Data/submission_format.csv
 eggs/
 .eggs/
 lib/
