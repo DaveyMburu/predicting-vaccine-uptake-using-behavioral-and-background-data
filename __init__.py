@@ -24,4 +24,3 @@ def explore_dataset(path):
     print(df.info())
     print()
     print(ribbon)
-    
