@@ -193,3 +193,5 @@ cython_debug/
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
+#  Cursor also creates a `.cursor` directory in the project root, which contains user-specific
+#  settings and state. This directory should be ignored to prevent sharing user-specific data.
