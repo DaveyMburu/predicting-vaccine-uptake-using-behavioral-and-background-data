@@ -20,7 +20,7 @@ def explore_dataset(path):
     print(df.describe())
     print()
     print(ribbon)
-    print('----------------Dataset Information---------------- \n')
+    print('----------------Dataset Overall Information---------------- \n')
     print(df.info())
     print()
     print(ribbon)
