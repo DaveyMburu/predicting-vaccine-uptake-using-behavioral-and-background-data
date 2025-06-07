@@ -67,8 +67,12 @@ So is economic status and number of people in a household
 ![Number of People in Household](Images/EDA/Vaccine%20uptake%20against%20number%20of%20people%20in%20household.png)
 
 
+## Modeling and Evaluation
+The models I built used the above data points among others to predict the likelihood of a person getting a vaccine. I used logistic regression and decision trees. The trees were overfitting and still did not perform well after tuning. The below curves represent the performance the best 3 trees I built:
+![ROC curves](Images/Modeling/ROC%20curves.png)
 
-The models I built used the above data points among others to predict the likelihood of a person getting a vaccine. The best performing model was a logistic regression model with this confusion matrix:
+
+The best performing model was a logistic regression model with this confusion matrix:
 
 ![Confusion Matrix](Images/Modeling/Best%20Model.png)
 
