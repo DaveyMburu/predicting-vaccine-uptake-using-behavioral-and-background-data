@@ -36,7 +36,7 @@ Some of the questions this project helps stakeholders to answer are:
 
 4. How does the number of people in a household affect vaccine uptake?
 
-The above questions hence make up the 4 objectives of this project
+The above questions hence make up the 4 objectives of this project in addition to finding the best model for predicting negative vaccine uptake cases
 
 
 ## Data Understanding
@@ -48,3 +48,42 @@ The data is provided courtesy of the United States [National Center for Health S
 The dataset is made up of 26707 entries which are distributed across 36 columns representing the people's answers to these survey questions. As a result of how most surveys are done, this dataset is made up of binary values representing 'true' or 'false' and scaled entries representing the degree of the respondents' opinion about a question.
 
 ### Analysis and Results
+
+A doctor's recommendation highly impacts vaccine uptake
+![How doctor's recommendation and people's attitudes affect vaccine uptake](Images/EDA/vaccine%20uptake%20against%20people's%20attitude.png)
+
+
+People's beliefs about the vaccine affect if they will take it or not
+![People's beliefs](Images/EDA/Vaccine%20uptake%20against%20people's%20beliefs.png)
+
+
+Age group is another contributing factor
+![Age group](Images/EDA/Vaccine%20uptake%20against%20age%20group.png)
+
+
+So is economic status and number of people in a household
+![Economic Status](Images/EDA/Vaccine%20uptake%20against%20economic%20status.png)
+
+![Number of People in Household](Images/EDA/Vaccine%20uptake%20against%20number%20of%20people%20in%20household.png)
+
+
+The models I built used the above data points and others to predict the likelihood of a person getting a vaccine. The best performing model was a logistic regression model with this confusion matrix:
+
+![Confusion Matrix](Images/Modeling/Best%20Model.png)
+
+The model is most effective in predicting true negatives. These are the people who are not likely to get the vaccine. This is desirable so as to help KEMRI identify where to direct its vaccination efforts. 
+The false negatives are also more than the false positives. This is also highly desirable because it's better to direct vaccination effort to more people than necessary even those who would have gotten vaccinated anyway than missing out on potential vaccination drives to hesitant people because they were classified as likely to get vaccinated on their own.
+
+
+## Conclusion and Recommendations
+
+In conclusion, the factors that highly impact a person's likelihood to get vaccinated are: age group, people's attitude about the disease, people's beliefs about the vaccine, doctor's recommendation to vaccinate, and economic status.
+
+From these, in the event of another disease outbreak or a pandemic, I would recommend KEMRI to:
+
+1. Spread awareness about the effects about a disease to ensure people take vaccination seriously.
+2. Engage in vaccination information campaigns to combat people's negative beliefs about vaccines.
+3. Target people aged 18-44 as these are the least likely to get vaccines.
+4. Subsidize vaccine costs to ensure people on with a low economic status can get the vaccine.
+5. Subsidize households with more than three people to ensure they all get vaccinated.
+6. Encourage doctors and other medical professionals to personally recommend the vaccine to people.
