@@ -102,6 +102,8 @@ Research on and build even more powerful models than the ones used in this proje
 
 For a deeper look into how I went about the project, check out the [jupyter notebook](index.ipynb)
 
+For a slide presentation with simple non-technical words, check out the [presentation](presentation.pdf)
+
 Check the [images folder](./Images/) to see visualizations of how other features influence vaccine uptake
 
 You can reach out to me by sending an email: [daveygmburu@gmail.com](mailto:daveygmburu@gmail.com)
