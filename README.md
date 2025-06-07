@@ -67,11 +67,13 @@ So is economic status and number of people in a household
 ![Number of People in Household](Images/EDA/Vaccine%20uptake%20against%20number%20of%20people%20in%20household.png)
 
 
-The models I built used the above data points and others to predict the likelihood of a person getting a vaccine. The best performing model was a logistic regression model with this confusion matrix:
+
+The models I built used the above data points among others to predict the likelihood of a person getting a vaccine. The best performing model was a logistic regression model with this confusion matrix:
 
 ![Confusion Matrix](Images/Modeling/Best%20Model.png)
 
 The model is most effective in predicting true negatives. These are the people who are not likely to get the vaccine. This is desirable so as to help KEMRI identify where to direct its vaccination efforts. 
+
 The false negatives are also more than the false positives. This is also highly desirable because it's better to direct vaccination effort to more people than necessary even those who would have gotten vaccinated anyway than missing out on potential vaccination drives to hesitant people because they were classified as likely to get vaccinated on their own.
 
 
@@ -79,11 +81,29 @@ The false negatives are also more than the false positives. This is also highly 
 
 In conclusion, the factors that highly impact a person's likelihood to get vaccinated are: age group, people's attitude about the disease, people's beliefs about the vaccine, doctor's recommendation to vaccinate, and economic status.
 
-From these, in the event of another disease outbreak or a pandemic, I would recommend KEMRI to:
+From these indicators, in the event of another disease outbreak or a pandemic, I would recommend KEMRI to:
 
 1. Spread awareness about the effects about a disease to ensure people take vaccination seriously.
 2. Engage in vaccination information campaigns to combat people's negative beliefs about vaccines.
 3. Target people aged 18-44 as these are the least likely to get vaccines.
-4. Subsidize vaccine costs to ensure people on with a low economic status can get the vaccine.
+4. Subsidize vaccine costs to ensure people with a low economic status can get the vaccine.
 5. Subsidize households with more than three people to ensure they all get vaccinated.
 6. Encourage doctors and other medical professionals to personally recommend the vaccine to people.
+
+
+## Next Steps
+
+Build pipelines for the data preprocessing and modeling steps in preparation to deploy the model
+
+Research on and build even more powerful models than the ones used in this project to get better predictions
+
+
+## More Information
+
+For a deeper look into how I went about the project, check out the [jupyter notebook](index.ipynb)
+
+Check the [images folder](./Images/) to see visualizations of how other features influence vaccine uptake
+
+You can reach out to me by sending an email: [daveygmburu@gmail.com](mailto:daveygmburu@gmail.com)
+
+Or send me a message on [LinkedIn](www.linkedin.com/in/david-g-mburu-b1268a1b7)
